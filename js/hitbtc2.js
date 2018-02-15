@@ -688,6 +688,7 @@ module.exports = class hitbtc2 extends hitbtc {
             parseFloat (ohlcv['min']),
             parseFloat (ohlcv['close']),
             parseFloat (ohlcv['volumeQuote']),
+            parseFloat (ohlcv['volume']),
         ];
     }
 

@@ -325,6 +325,7 @@ module.exports = class gdax extends Exchange {
             ohlcv[1],
             ohlcv[4],
             ohlcv[5],
+            -1,
         ];
     }
 

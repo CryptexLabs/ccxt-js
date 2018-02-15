@@ -780,8 +780,9 @@ module.exports = class Exchange {
             if (limit && (result.length >= limit))
                 break;
             let ohlcv = this.parseOHLCV (ohlcvs[i], market, timeframe, since, limit)
-            if (since && (ohlcv[0] < since))
-                continue
+            if (since && (ohlcv[0] < since)) {
+				continue
+			}
             result.push (ohlcv)
         }
         return result
